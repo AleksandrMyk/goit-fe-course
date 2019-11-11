@@ -1,7 +1,10 @@
 html {font-family: "Playfair Display", serif;}
+.container {width: 900px; margin: 0px auto;}
+a {display: block;}
 /*Header*/
 header {
-    width: 900px; margin: 0px auto;
+    padding-top: 76px;
+    padding-bottom: 100px;
     text-align: center;
 }
 .main-menu {
@@ -9,10 +12,6 @@ header {
     list-style: none;
     margin: 0px;
     padding: 0px;
-    margin-top: 76px;
-    margin-bottom: 100px;
-    margin-right: 165px;
-    margin-left: 165px;
 }
 .main-menu-items {
     display: inline-block;
@@ -29,40 +28,44 @@ a:hover {color: rgb(3, 169, 244);}
 a:focus {color: rgb(3, 169, 244);}
 .main-menu-items:nth-child(4) {margin-right: 0px;}
 /*Main*/
-section {
-    width: 900px; 
-    margin: 0 auto;
+.main-content {padding-bottom: 70px;}
+.big-box {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    padding-bottom: 56px;
 }
-.big-box {margin: 0; padding: 0; font-size: 0px;}
 .big-box-item {
+    display: inline-block;
     width: 420px;
     margin-right: 60px;
-    margin-bottom: 136px;
-    display: inline-block;
 }
 .big-box-item:nth-child(2n) {margin-right: 0px;}
-.big-box-item:nth-last-child(-n + 2) {margin-bottom: 0px;}
-.big-box-item:nth-last-child(-n + 2) {padding-bottom: 54px;}
+.big-box li:nth-child(-n + 4) {margin-bottom: 136px;}
 img {margin-bottom: 32px;}
 .content-header {
+    margin: 0;
     text-transform: uppercase;
     font-size: 14px;
     margin-bottom: 28px;
 }
 .content-h2 {
+    margin: 0;
     font-size: 30px;
     margin-bottom: 40px
 }
 .content-text {
+    margin: 0;
     font-size: 14px;
     line-height: 24px;
+}
+.load-more {text-align: center;
 }
 .more {
     margin: 0;
     padding: 0;
     width: 164px;
     height: 60px;
-    margin-bottom: 70px;
     background: rgb(255 255 255);
     border: 1px solid rgb(98, 98, 98);
     font-size: 20px;
@@ -71,4 +74,7 @@ img {margin-bottom: 32px;}
 }
 .more:hover {color: rgb(3, 169, 244);}
 .more:focus {color: rgb(3, 169, 244);}
-.load-more {text-align: center;}
+p::selection {
+    color: black;
+    background-color: green;
+}
