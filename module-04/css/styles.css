@@ -73,7 +73,7 @@ nav {
   text-decoration: none;
   color: rgb(85, 82, 82);
 }
-.logo::before {content:'m';
+.logo::first-letter {
   font-family: 'Roboto' sans-serif;
   font-weight: 200;
   font-size: 30px;
@@ -91,15 +91,15 @@ h2 {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 48px;
-  line-height: 37px;
+  line-height: 52px;
   text-decoration: none;
+  margin-bottom: 90px;
 }
 h2::after {
   display: block;
   margin: 0 auto;
   padding: 0;
   margin-top: 30px;
-  margin-bottom: 90px;
   width: 164px;
   height: 7px;
   content: "";
@@ -107,11 +107,9 @@ h2::after {
 }
 /*UL-products*/
 .products {margin-bottom: 105px;}
-.products-list {
-  /* background: radial-gradient(rgb(41, 128, 185), rgb(26, 188, 156), rgb(255, 255, 255)); */
+.products-list {/* background: radial-gradient(rgb(41, 128, 185), rgb(26, 188, 156), rgb(255, 255, 255)); */
   margin: 0;
   padding: 0;
-  /* padding-bottom: 105px; */
 }
 .products-list li {
   list-style: none;
@@ -161,8 +159,7 @@ h3 {
 .products-list li:hover .garb {background-color: rgba(26, 188, 156, 0.6);}
 .products-list li:hover .price {background-color: rgba(26, 188, 156, 0.6);}
 /*UL-NEWS*/
-.news-list {
-  /* background: linear-gradient(0deg, rgb(41, 128, 185), rgb(26, 188, 156), rgb(255, 255, 255)); */
+.news-list {/* background: linear-gradient(0deg, rgb(41, 128, 185), rgb(26, 188, 156), rgb(255, 255, 255)); */
   margin: 0;
   padding: 0;
 }
@@ -180,7 +177,7 @@ h3 {
   font-family: "Times New Roman", Times, sans-serif;
   line-height: 26px;
   color: rgb(85, 82, 82);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .news-text {
   margin: 0;
@@ -193,7 +190,6 @@ h3 {
   margin: 0;
   padding: 0;
   margin-top: 15px;
-  margin-bottom: 20px;
   width: 136px;
   height: 5px;
   content: "";
@@ -207,18 +203,18 @@ h3 {
 .more {
   margin: 0;
   padding: 0;
-  float: left;
   width: 160px;
   height: 50px;
   background: radial-gradient(circle, rgb(41, 128, 185), rgb(26, 188, 156));
 }
-/* .more:hover {box-shadow: 8px 0px 10px 8px rgb(10, 10, 10);} */
 .more a {
-  display: block;
+ text-align: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  text-align: center;
   font-size: 16px;
   line-height: 26px;
   padding-top: 12px;
+  background: radial-gradient(circle, rgb(41, 128, 185), rgb(26, 188, 156))
 }
+.more a:hover {color: rgb(7, 7, 7);}
+.more a:focus {color: rgb(7, 7, 7);}
