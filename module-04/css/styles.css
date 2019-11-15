@@ -200,21 +200,17 @@ h3 {
 .news-text:hover {color:rgb(0, 0, 0); font-size: 30px;} */
 
 /*КНОПКА/ССЫЛКА/НАЖИМАЛКА*/
-.more {
-  margin: 0;
-  padding: 0;
-  width: 160px;
-  height: 50px;
-  background: radial-gradient(circle, rgb(41, 128, 185), rgb(26, 188, 156));
-}
-.more a {
- text-align: center;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  line-height: 26px;
-  padding-top: 12px;
-  background: radial-gradient(circle, rgb(41, 128, 185), rgb(26, 188, 156))
-}
-.more a:hover {color: rgb(7, 7, 7);}
-.more a:focus {color: rgb(7, 7, 7);}
+  .news-list-item a {
+    margin: 0; padding: 0;
+    width: 160px;
+    height: 32px;
+    background: rgb(26, 188, 156);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 11px;
+    text-align: center;
+    padding-top: 18px;
+  }
+.news-list-item a:hover {color: rgb(7, 7, 7);}
+.news-list-item a:focus {color: rgb(7, 7, 7);}
