@@ -7,22 +7,22 @@ html {
   padding: 0;
 }
 .container {
-  width: 1600px;
   margin: 0 auto;
   padding: 0;
+  width: 1110px;
 }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 a {
   display: block;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -35,6 +35,7 @@ header {
   padding-bottom: 100px;
   padding-top: 40px;
 }
+
 /*МЕНЮШКА*/
 .main-menu {
   float: right;
@@ -69,6 +70,7 @@ header {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 /*ЛОГО*/
 .logo {
   display: inline-block;
@@ -89,16 +91,15 @@ header {
   text-decoration: none;
   color: rgb(26, 188, 156);
 }
+
 /*СЕКЦИЯ*/
 /*СЛАЙДЕР*/
 .slider {
   position: relative;
-  width: 1600px;
 }
 .slider-list {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 .slider-image {
   height: 600px;
@@ -124,6 +125,7 @@ header {
   line-height: 54px;
   font-weight: 200;
 }
+
 /*КНОПКИ*/
 .slider-button {
   position: absolute;
@@ -144,9 +146,15 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-.button-prev:hover,
+.button-prev:hover {
+  opacity: 65%;
+  transition: 0.3s linear;
+  padding-right: 15px;
+}
 .button-next:hover {
   opacity: 65%;
+  transition: 0.3s linear;
+  padding-left: 15px;
 }
 .button-prev::after {
   content: "\2039";
@@ -164,16 +172,17 @@ header {
   line-height: 35px;
   font-weight: 200;
 }
+
 /*СЕКЦИЯ*/
 .main-content {
   display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 1600px;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #e9f0fd;
+  padding-bottom: 100px;
 }
+
 /*H2*/
 .section-name {
   text-align: center;
@@ -196,12 +205,11 @@ header {
   height: 7px;
   background-color: rgb(26, 188, 156);
 }
+
 /*КАРТОЧКИ*/
 .main-list {
   width: 1110px;
-  list-style: none;
   margin: 0 auto;
-  margin-bottom: 100px;
 }
 .main-list-items {
   position: relative;
@@ -210,9 +218,7 @@ header {
   padding: 0;
   margin-right: 30px;
 }
-.main-list-items:nth-child(4) {
-  margin-right: 0px;
-}
+.main-list-items:nth-child(4) {margin-right: 0px;}
 .goods-info {
   font-size: 18px;
   line-height: 32px;
@@ -236,37 +242,88 @@ header {
   padding-left: 10px;
   padding-top: 5px;
 }
+.main-list-items:hover .goods-name {
+  background-color: #1abc9c;
+  padding-left: 40px;
+  transition: 0.3s;
+}
+.main-list-items:hover .goods-prise {
+  background-color: #1abc9c;
+  opacity: 80%;
+}
+
 /*ХОВЕР КАРТОЧКИ*/
 .shadow-box {
   position: absolute;
-  top: 10px; left: 10px;
-  width: 235px; height: 300px;
-  background-color: #737373; opacity: 0%;
+  top: 10px;
+  left: 10px;
+  width: 235px;
+  height: 300px;
+  background-color: #73737300;
 }
-.box-icons {
-  position: absolute;
-  top: 100px;
-  margin: 0; padding: 0;
-  text-align: center;
-  opacity: 0%;
-}
-.box-icons button {
-  display: inline-block;
-  margin: 0; padding: 0;
+.main-list-items:hover .shadow-box {background-color: rgba(0, 0, 0, 0.6);}
+.main-list-items:hover .icon-list-item {opacity: 1;}
+.icon-list-item:hover button {
+  background-color: #1abc9c;
   border: none;
-  background: transparent;
 }
-.main-list-items:hover .goods-name {background-color: #1abc9c;}
-.main-list-items:hover .goods-prise {background-color: #1abc9c; opacity: 80%;}
-.main-list-items:hover .shadow-box {opacity: 55%;}
-.main-list-items:hover .box-icons {opacity: 100%; transition-duration: 2s;}
-.icon:hover {background-color: #1abc9c;}
+.red:hover .icon-heart {
+  background-color: red;
+  transition: 0.3s ease;
+  background-size: 40px;
+}
+/*ИКОНКИ*/
+.icon-list {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-list-item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+.icon-list button {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: center;
+}
+.add, .add button {width: 160px; height: 50px;}
+.icon-list .icon-add {background-position: 10% 40%;}
+.add-text {
+  text-transform: uppercase;
+  color: #fcfcfc;
+  font-size: 14px;
+  float: right;
+}
+.icon-heart {
+  background: transparent;
+  background-image: url(../img/heart.png);
+}
+.icon-share {
+  background: transparent;
+  background-image: url(../img/share.png);
+}
+.icon-clock {
+  background: transparent;
+  background-image: url(../img/clock.png);
+}
+.icon-add {
+  background: transparent;
+  background-image: url(../img/add.png);
+}
+
 /*ФУТЕР*/
 .end {
   position: relative;
   margin: 0;
   padding: 0;
-  width: 1600px;
+  width: 100%;
   height: 90px;
   background-color: #383838;
 }
@@ -292,6 +349,7 @@ header {
   text-decoration: none;
   color: #1abc9c;
 }
+
 /*ФИКСИРОВАННАЯ КНОПКА*/
 .help {
   position: fixed;
@@ -306,4 +364,7 @@ header {
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
+}
+.help:hover {
+  filter: hue-rotate(180deg);
 }
