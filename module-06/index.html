@@ -12,13 +12,12 @@
   <title>Homework|/Module-06</title>
 </head>
 <body>
-  <div class="container">
     <header>
-      <nav class="navigation clearfix">
+      <nav class="navigation">
         <a class="logo" href="#" title="mogo">
           <span class="mo">mo</span><span class="go">go</span>
         </a>
-        <ul class="main-menu clearfix">
+        <ul class="main-menu">
           <li><a href="#" title="about">about</a></li>
           <li><a href="#" title="service">service</a></li>
           <li><a href="#" title="work">work</a></li>
@@ -29,7 +28,8 @@
     </header>
     <main>
       <section class="main-content">
-        <h4>We work with</h4>
+          <div class="container">
+        <span class="subtitle">We work with</span>
         <h2>amazing services</h2>
         <ul class="service-list">
           <li class="service-list-items">
@@ -75,7 +75,7 @@
           </div>
           </li>
         </ul>
-        <h4>Who we are</h4>
+        <span class="subtitle">Who we are</span>
         <h2 class="h2">meet our team</h2>
         <p class="team-textfish">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aspernatur esse consequuntur quo vitae,
            deserunt fugit natus quidem fugiat exercitationem reiciendis consequatur sequi architecto. Dignissimos 
@@ -140,19 +140,19 @@
               </div>
               </li>
         </ul>
+      </div>
       </section>
-      <footer class="foo">
-        <div class="foo-text">
-          <span>&copy; 2016 MoGo free PSD template by <a href="#" title="Laaqiq">Laaqiq</a></span>
-        </div>
-        <div class="mail">
-          <form>
-            <input class="input-box" type="text" required placeholder="Your Email.....">
-          </form>
-          <button class="subscribe">subscribe</button>
-        </div>
-      </footer>
     </main>
-  </div>
+    <footer class="foo">
+      <div class="foo-box">
+      <div class="foo-text">
+        <span>&copy; 2016 MoGo free PSD template by <a href="#" title="Laaqiq">Laaqiq</a></span>
+      </div>
+        <form class="input-box">
+          <input class="email" type="text" required placeholder="Your Email.....">
+          <input type="submit" class="subscribe" value="subscribe">
+        </form>
+      </div>
+    </footer>
 </body>
 </html>
