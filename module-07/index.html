@@ -27,6 +27,7 @@
       </form>
     </nav>
   </header>
+  <main>
   <section class="main-section">
     <div class="title-services">
       <h2>services</h2>
@@ -55,14 +56,19 @@
       <h2 class="title-contact">contact us</h2>
       <p class="subtitle-contact">Lorem ipsum dolor sit amet suscipit</p>
     </div>
-    <form action="#" name="" class="box-for-form">
-      <input type="text" name="your-name" placeholder="your name*" required class="send-info" id="yn">
-      <input type="email" name="your-email" placeholder="your e-mail*" required class="send-info" id="ye">
-      <input type="text" name="your-subject" placeholder="subject" required class="send-info subject" id="ys">
-      <textarea type="text" name="messege-text" placeholder="your message*" required class="message" id="tt"></textarea>
-      <input type="submit" value="send message" class="submit">
+    <form action="#" name="" class="box-form">
+      <div class="send-box">
+        <div class="box-input">
+        <input type="text" name="your-name" placeholder="your name*" required class="send-info" id="yn">
+        <input type="email" name="your-email" placeholder="your e-mail*" required class="send-info" id="ye">
+        <input type="text" name="your-subject" placeholder="subject" required class="send-info subject" id="ys">
+      </div>
+        <textarea type="text" name="messege-text" placeholder="your message*" required
+                  class="message" id="tt"></textarea>
+      </div>
+      <button type="submit" class="submit">send message</button>
     </form>
   </section>
+</main>
 </body>
-
 </html>
