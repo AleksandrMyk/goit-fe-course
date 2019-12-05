@@ -31,8 +31,8 @@ ul, li {
   padding: 0;
 }
 
-.service {padding-bottom: 90px;}
-.team {margin-bottom: 90px;}
+.service, .team {padding-bottom: 90px;}
+
 
 /*HEADER*/
 
