@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  outline: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.container {
+  width: 320px;
+  padding: 0px 10px; 
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.promo {
+  min-height: 540px;
+  color: #ffffff;
+  padding-top: 20px;
+  margin-bottom: 80px;
+  font-family:'Montserrat', sans-serif;
+  background-image: url(../img/backmob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.subtitle, .main-title, .logo {text-transform: uppercase;}
+
+/*верхние кнопки*/
+.small-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 28px;
+  
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 128px;
+}
+.log, .sign {
+  font-size: 14px;
+  font-weight: 700;
+  width: 92px; height: 38px;
+}
+.log:hover, .sign:hover,
+.log:focus, .sign:focus {
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+}
+.log:active, .sign:active {
+  color: #000;
+}
+
+/*logo*/
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+/*заголовок*/
+.titles {
+  width: 268px;
+  margin: auto; padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+.text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*нижняя кнопка*/
+.find-it {
+  font-size: 14px;
+  width: 280px; height: 42px;
+  background: #ff4e50;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.find-it:active, .find-it:focus {color: #000;}
+.find-it:hover {
+  background: #ffff;
+  color: #ff4e50;
+}
+
+/*секция партеры*/
+.partner {
+  color: #333333;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+.opus {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #686868;
+}
+.meet-us {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*список*/
+.partner-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.partner-items {
+  position: relative;
+  width: 220px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.partner-items:nth-child(4) {margin-bottom: 0px;}
+.photo-face {
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.title-p {
+  margin-bottom: 20px;
+}
+
+/*иконки*/
+.icon {
+  width: 32px; height: 32px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  
+}
+.chicago-bull { 
+  bottom: 75px; left: 130px;
+  background: #ff4e50 url(../img/f1.png);
+}
+.terminator { 
+  bottom: 75px; left: 130px;
+  background: #ffa507 url(../img/f2.png);
+}
+.king-cat { 
+  bottom: 90px; left: 130px;
+  background: #4e73db url(../img/f4.png);
+}
+.Heather-Walker{ 
+  bottom: 75px; left: 130px;
+  background: #1cd7ad url(../img/f3.png);
+}
+
+/*кнопка*/
+.more {
+  width: 280px; height: 42px;
+  background: #ffffff;
+  color: #ff4e50;
+  border: 1px solid #ff4e50;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; padding: 0;
+}
+.more:active, .more:focus {color: #000;}
+.more:hover {
+  background: #ff4e50;
+  color: #ffffff;
+}

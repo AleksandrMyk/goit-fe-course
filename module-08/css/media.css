@@ -1,0 +1,69 @@
+@media (min-width: 748px) {
+	.container {
+		width: 748px;
+	}
+	.promo {
+		min-height: 700px;
+		margin-bottom: 74px;
+	}
+	.small-header {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 160px;
+	}
+	.buttons {
+		margin: 0; padding: 0;
+	}
+	.find-it {
+		margin-bottom: 232px;
+	}
+	.partner-list {
+		height: 500px; width: 492px;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		margin-bottom: 38px;
+	}
+	.partner-items {
+		margin: 0; padding: 0;
+		margin-right: 20px;
+	}
+	.partner-items:nth-child(odd) {margin-bottom: 58px;}
+}
+
+@media (min-width: 940px) {
+	.container {width: 940px;}
+	.promo {
+		min-height: 700px;
+		margin-bottom: 74px;
+	}
+	.small-header {
+		justify-content: space-between;
+	}
+	.partner-list {
+		width: auto; height: auto;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center
+	}
+	.partner-items {
+		margin-right: 13px;
+	}
+	.partner-items:nth-child(4) {
+		margin-right: 0;		
+	}
+	.partner-items:nth-child(odd) {margin-bottom: 0px;}
+	.chicago-bull { 
+		bottom: 90px; left: 130px;
+	}
+	.terminator { 
+		bottom: 90px; left: 130px;
+	}
+	.king-cat { 
+		bottom: 90px; left: 130px;
+	}
+	.Heather-Walker{ 
+		bottom: 90px; left: 130px;
+	}
+}
