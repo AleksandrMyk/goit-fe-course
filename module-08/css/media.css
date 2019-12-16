@@ -2,23 +2,19 @@
 	.container {
 		width: 748px;
 	}
-	.promo {
-		min-height: 700px;
-		margin-bottom: 74px;
-	}
 	.small-header {
-		display: flex;
+		min-height: 700px;
+		margin-bottom: 80px;
+	}
+	.navigation {
 		flex-direction: row-reverse;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 160px;
+		margin-bottom: 166px;
 	}
-	.buttons {
-		margin: 0; padding: 0;
-	}
-	.find-it {
-		margin-bottom: 232px;
-	}
+	.buttons {margin: 0;}
+	.main-title {margin-bottom: 40px;}
+	.text {margin-bottom: 36px;}
 	.partner-list {
 		height: 500px; width: 492px;
 		flex-wrap: wrap;
@@ -34,19 +30,13 @@
 
 @media (min-width: 940px) {
 	.container {width: 940px;}
-	.promo {
-		min-height: 700px;
-		margin-bottom: 74px;
-	}
-	.small-header {
-		justify-content: space-between;
-	}
 	.partner-list {
 		width: auto; height: auto;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: center
 	}
+	.partner {padding-bottom: 70px;}
 	.partner-items {
 		margin-right: 13px;
 	}
@@ -54,16 +44,4 @@
 		margin-right: 0;		
 	}
 	.partner-items:nth-child(odd) {margin-bottom: 0px;}
-	.chicago-bull { 
-		bottom: 90px; left: 130px;
-	}
-	.terminator { 
-		bottom: 90px; left: 130px;
-	}
-	.king-cat { 
-		bottom: 90px; left: 130px;
-	}
-	.Heather-Walker{ 
-		bottom: 90px; left: 130px;
-	}
 }

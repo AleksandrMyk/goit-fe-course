@@ -343,6 +343,10 @@ template {
   display: block;
   clear: both;
 }
+* {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
 
 .visually-hidden {
   position: absolute;

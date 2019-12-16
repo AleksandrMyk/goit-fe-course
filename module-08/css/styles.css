@@ -26,31 +26,18 @@
   src: local('Montserrat Bold'), local('Montserrat-Bold'),
        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('../fonts/montserrat-v14-latin-700.woff') format('woff');
 }
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-* {
-  outline: none;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
 
 .container {
   width: 320px;
   padding: 0px 10px; 
   margin: 0 auto;
-  padding-bottom: 60px;
 }
-.promo {
+.small-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
   min-height: 540px;
   color: #ffffff;
-  padding-top: 20px;
-  margin-bottom: 80px;
   font-family:'Montserrat', sans-serif;
   background-image: url(../img/backmob.jpg);
   background-repeat: no-repeat;
@@ -60,12 +47,10 @@ html {
 .subtitle, .main-title, .logo {text-transform: uppercase;}
 
 /*верхние кнопки*/
-.small-header {
+.navigation {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 28px;
-  
+  margin-bottom: 40px;
 }
 .buttons {
   display: flex;
@@ -136,6 +121,7 @@ html {
   font-family:'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 14px;
+  padding-bottom: 40px;
 }
 .opus {
   font-family: 'Roboto', sans-serif;
@@ -172,29 +158,17 @@ html {
 }
 
 /*иконки*/
-.icon {
+.partner-items::after {
+  position: absolute; bottom: 90px; left: 130px;
+  content: '';
   width: 32px; height: 32px;
   border: 3px solid #ffffff;
   border-radius: 50%;
-  position: absolute;
-  
 }
-.chicago-bull { 
-  bottom: 75px; left: 130px;
-  background: #ff4e50 url(../img/f1.png);
-}
-.terminator { 
-  bottom: 75px; left: 130px;
-  background: #ffa507 url(../img/f2.png);
-}
-.king-cat { 
-  bottom: 90px; left: 130px;
-  background: #4e73db url(../img/f4.png);
-}
-.Heather-Walker{ 
-  bottom: 75px; left: 130px;
-  background: #1cd7ad url(../img/f3.png);
-}
+.chicago-bull::after {background: #ff4e50 url(../img/f1.png);}
+.terminator::after {background: #ffa507 url(../img/f2.png);}
+.king-cat::after {background: #4e73db url(../img/f4.png);}
+.Heather-Walker::after {background: #1cd7ad url(../img/f3.png);}
 
 /*кнопка*/
 .more {
