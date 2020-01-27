@@ -202,6 +202,7 @@ html {
 
 /*amazing services*/
 .service-list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,16 +220,71 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 380px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
-/* .service-list__items:hover {-webkit-box-shadow: 10px 10px 5px #95e1d3;box-shadow: 10px 10px 5px #95e1d3; -webkit-transition: 200ms linear; transition: 200ms linear;}
-.service-list__items:hover .service-list__icon-box {
-  -webkit-transform: rotateZ(-70deg);
-          transform: rotateZ(-70deg); -webkit-transition: 800ms linear; transition: 800ms linear; */
+.alarm:before, .web:before, .creativity:before, .seo:before, .css:before, .digital:before, .header:before {
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+.alarm:before {
+  content:'';
+  display: block;
+  background-image: url(../img/ALARM.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -1%;
+}
+.web:before {
+  content:'';
+  display: block;
+  background-image: url(../img/LINE.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 30%;
+}
+.creativity:before {
+  content:'';
+  display: block;
+  background-image: url(../img/COMPUTER.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 62%;
+}
+.seo:before {
+  content:'';
+  display: block;
+  background-image: url(../img/BOOK.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: -1%;
+}
+.css:before {
+  content:'';
+  display: block;
+  background-image: url(../img/HOME.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 30%;
+}
+.digital:before {
+  content:'';
+  display: block;
+  background-image: url(../img/digital.png);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 62%;
+}
+
 .service-list__name-text {
   margin: 0; padding: 0;
   font-size: 15px;
@@ -259,14 +315,7 @@ html {
   height: 32px;
   background-repeat: no-repeat;
   background-size: contain;
-  
 }
-.service-list--photo {background-image: url(../img/ALARM.png);}
-.service-list--web {background-image: url(../img/LINE.png);}
-.service-list--creativity {background-image: url(../img/COMPUTER.png);}
-.service-list--seo {background-image: url(../img/BOOK.png);}
-.service-list--css {background-image: url(../img/HOME.png);}
-.service-list--digital {background-image: url(../img/digital.png);}
 
 /*СЕКЦИЯ*/
 .container__team-textfish {
@@ -332,7 +381,7 @@ html {
 /*Xоверы*/
 .blue {
   margin: 0; padding: 0;
-  width: 380px; height: 475px;
+  width: 380px; height: 470px;
   background-color: #95e1d3;
   background-repeat: no-repeat;
   margin-bottom: 30px;
@@ -450,11 +499,11 @@ html {
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-.service-list--photo {background-image: url(../img/ALARM@2x.png); background-position: 50% 12%;}
-.service-list--web {background-image: url(../img/LINE@2x.png); background-position: 50% 12%;}
-.service-list--creativity {background-image: url(../img/COMPUTER@2x.png); background-position: 50% 12%;}
-.service-list--seo {background-image: url(../img/BOOK@2x.png); background-position: 50% 12%;}
-.service-list--css {background-image: url(../img/HOME@2x.png); background-position: 50% 12%;}
-.service-list--digital {background-image: url(../img/digital@2x.png); background-position: 50% 12%;}
-.header {background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../img/banner@2x.jpg);}
+.alarm:before {background-image: url(../img/ALARM@2x.png);}
+.web:before {background-image: url(../img/LINE@2x.png); background-position: 50% 12%;}
+.creativity:before {background-image: url(../img/COMPUTER@2x.png); background-position: 50% 12%;}
+.seo:before {background-image: url(../img/BOOK@2x.png); background-position: 50% 12%;}
+.css:before {background-image: url(../img/HOME@2x.png); background-position: 50% 12%;}
+.digital:before {background-image: url(../img/digital@2x.png); background-position: 50% 12%;}
+.header:before {background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../img/banner@2x.jpg);}
 }
