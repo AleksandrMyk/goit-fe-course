@@ -1,0 +1,32 @@
+.service-list {
+  position: relative;
+  display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	.service-list__items {
+		display: flex;
+		width: 380px;
+		flex-direction: row;
+		&:nth-child(3n) {margin-right: 0px;}
+		&:nth-child(-n+3) {margin-bottom: 100px;}
+	}
+	.service-list__name-text {
+		margin: 0; padding: 0;
+		font-size: 15px;
+		line-height: 24px;
+		text-transform: uppercase;
+		color: $services-name-text;
+		margin-bottom: 20px;
+	}
+	.service-list__fish-text {
+		margin: 0; padding: 0;
+		font-size: 14px;
+		color: $services-fish-text;
+	}
+	.service-list__text {
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+	}
+}

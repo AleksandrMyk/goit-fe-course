@@ -1,0 +1,18 @@
+.navigation__logo {
+  float: left;
+  font-size: 30px;
+  line-height: auto;
+  font-weight: 600;
+	color: $logo-color;
+		&--mo::first-letter {
+			text-transform: uppercase;
+		}
+		&--go::first-letter {
+			text-transform: uppercase;
+		}
+		&:hover {
+			color: $nav-hover;
+			transition: 400ms linear;
+			padding-left: 10px;
+		}
+}

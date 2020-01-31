@@ -1,0 +1,29 @@
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .team .team__items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 20px;
+    width: 380px;
+    transition: 200ms linear; }
+    .team .team__items:nth-child(3) {
+      margin-right: 0; }
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .team-info .info {
+    margin: 0;
+    padding: 0; }
+  .team-info .team-info__name {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 20px; }

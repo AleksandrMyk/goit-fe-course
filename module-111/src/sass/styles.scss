@@ -1,0 +1,21 @@
+@import 'compilation/variables';
+@import 'compilation/placeholder';
+@import 'base';
+/*Хедер*/
+@import 'parts/header/bg';
+@import 'parts/header/logo';
+@import 'parts/header/menu';
+@import 'parts/header/title';
+@import 'parts/header/button';
+/*Секция сервисы*/
+@import 'parts/main/section-services/title';
+@import 'parts/main/section-services/list';
+@import 'parts/main/section-services/icons';
+/*Секция команда*/
+@import 'parts/main/section-team/title';
+@import 'parts/main/section-team/list';
+@import 'parts/main/section-team/list-info';
+@import 'parts/main/section-team/icons';
+/*Футер*/
+@import 'parts/footer/foo-box';
+@import 'parts/footer/form';

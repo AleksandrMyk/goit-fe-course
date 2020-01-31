@@ -1,0 +1,13 @@
+.foo__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  min-height: 65px; width: 1200px;
+	border-top: 1px solid $foo-border;
+	.foo__link {
+		color: $foo-link;
+		display: inline-block;
+		}
+}

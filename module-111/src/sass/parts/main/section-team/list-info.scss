@@ -1,0 +1,21 @@
+.team-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	.info {margin: 0; padding: 0;}
+	.team-info__name {
+	 font-size: 14px; 
+	 font-weight: 600; 
+	 text-transform: uppercase; 
+	 color: $team-info-name; 
+	 margin-bottom: 20px;
+ }
+	 .team-info__post {
+		 font-size: 15px; 
+		 line-height: 25px; 
+		 color: $team-info__post; 
+		 font-weight: 300; 
+		 font-style: italic;
+	 }
+ }

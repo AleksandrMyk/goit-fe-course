@@ -1,0 +1,23 @@
+.title {
+	@extend %title-flex;
+}
+.header-title {
+  color: $header-title-color;
+	margin-bottom: 126px;
+	.header-title__title-text {
+		font-family: $font-subtitle;
+		font-size: 72px;
+		margin-bottom: 60px;
+		font-style: italic;
+	}
+	.header-title__subtitle-text {
+		font-size: 150px;
+		text-transform: uppercase;
+	}
+	&::after {
+		@extend %after;
+		margin-top: 40px;
+		height: 4px; width: 200px;
+		background: $header-title-after;
+	}
+}

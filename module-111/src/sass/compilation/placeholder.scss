@@ -1,0 +1,45 @@
+%container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+}
+%subtitle {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	margin-bottom: 25px;
+	font-style: italic;
+}
+%after {
+	content: '';
+  display: block;
+  margin: 0 auto; padding: 0;
+}
+%title-flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+}
+%icon-services {
+	content:'';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+%cards {
+	position: absolute;
+  margin: 0; padding: 0;
+  margin-bottom: 30px;
+  width: 380px; height: 475px;
+}
+%card-hover {
+	transform: translate(-10px, -10px);
+  transition: 200ms linear;
+}
+%gradient-hover {
+	opacity: 1; 
+  transition: 200ms linear;
+}

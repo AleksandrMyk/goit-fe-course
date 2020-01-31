@@ -1,0 +1,43 @@
+.team {
+  display: flex;
+  flex-direction: row;
+	justify-content: center;
+	.team__items {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		margin-right: 20px;
+		width: 380px;
+		transition: 200ms linear;
+		&:nth-child(3) {margin-right: 0;}
+		.blue {
+			margin: 0; padding: 0;
+			width: 380px; height: 470px;
+			background-color: #95e1d3;
+			background-repeat: $team-bg-hover;
+			margin-bottom: 30px;
+			.card-one, 
+			.card-two, 
+			.card-three {
+				@extend %cards;
+			}
+			&:hover .card-one, 
+			&:hover .card-two, 
+			&:hover .card-three {
+				@extend %card-hover;
+			}
+			.gradient {
+				display: flex;
+				justify-content: center;
+				position: absolute;
+				top: 0px; left: 0px;
+				margin: 0; padding: 0;
+				width: 380px; height: 475px;
+				background: $gradient;
+				opacity: 0;
+			}
+			&:hover .gradient {@extend %gradient-hover;}
+		}
+	}
+}

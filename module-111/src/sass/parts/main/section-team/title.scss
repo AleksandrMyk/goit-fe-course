@@ -1,0 +1,19 @@
+.title {
+	@extend %title-flex;
+}
+.team-title {
+	margin-bottom: 70px;
+	 .team-title__subtitle-text {
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	.team-itle__title-text {
+		@extend %subtitle;
+	}
+	&::after {
+		@extend %after;
+		margin-top: 40px;
+		height: 4px; width: 60px;
+		background: #f38181;
+	}	
+}

@@ -1,0 +1,19 @@
+.input-box {
+  display: flex;
+  justify-content: flex-end;
+  width: 225px; height: 40px;
+	border: 1px solid $input-border;
+	.input-box__email {
+		font-style: italic;
+		font-weight: 300;
+		padding-left: 3px;
+		border: none;
+	}
+	.subscribe {
+		width: 150px; height: 40px;
+		border: none;
+		color: $btn-color;
+		text-transform: uppercase;
+		background: $btn-bg;
+	}
+}
