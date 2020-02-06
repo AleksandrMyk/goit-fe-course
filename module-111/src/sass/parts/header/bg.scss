@@ -1,6 +1,6 @@
 .header {
   min-height: 2000px;
-  background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../../img/banner.jpg);
+  background-image: $gradient, url(../../img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,8 +8,6 @@
   margin-bottom: 50px;
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .header:before {background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095),
-     url(../../img/banner@2x.jpg);
-    }
+    .header:before {background-image: $gradient, url(../../img/banner@2x.jpg);}
   }
 }

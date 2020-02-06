@@ -1,7 +1,11 @@
 .header {
-  min-height: 1000px;
+  min-height: 2000px;
+  background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../../img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20px;
   margin-bottom: 50px; }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .header .header:before {
+      background-image: url(../../../../img/banner@2x.jpg); } }

@@ -4,7 +4,7 @@
   padding: 0;
   width: 1200px; }
 
-.main-title .main-itle__subtitle, .team-title .team-itle__title-text {
+.main-title .main-itle__subtitle, .team-title .team-title__title-text {
   font-family: 'Kaushan Script', cursive;
   font-size: 24px;
   margin-bottom: 25px;
@@ -72,7 +72,7 @@ html {
 
 /*Хедер*/
 .header {
-  min-height: 1000px;
+  min-height: 2000px;
   background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../../img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -217,39 +217,43 @@ html {
     display: flex;
     flex-direction: column; }
 
-    .alarm:before {
-      background-image: url(../../img/ALARM.png);
-      left: -1%;
-    }
-    .web:before {
-      background-image: url(../../img/LINE.png);
-      left: 30%;
-    }
-    .creativity:before {
-      background-image: url(../../img/COMPUTER.png);
-      left: 62%;
-    }
-    .seo:before {
-      background-image: url(../../img/BOOK.png);
-      left: -1%;
-    }
-    .css:before {
-      background-image: url(../../img/HOME.png);
-      left: 30%;
-    }
-    .digital:before {
-      background-image: url(../../img/digital.png);
-      left: 62%;
-    }
+.alarm:before {
+  background-image: url(../../img/ALARM.png);
+  left: -1%; }
 
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .alarm:before {background-image: url(../../img/ALARM@2x.png)}
-      .web:before {background-image: url(../../img/LINE@2x.png);}
-      .creativity:before {background-image: url(../../img/COMPUTER@2x.png);}
-      .seo:before {background-image: url(../../img/BOOK@2x.png);}
-      .css:before {background-image: url(../../img/HOME@2x.png);}
-      .digital:before {background-image: url(../../img/digital@2x.png);}
-      }
+.web:before {
+  background-image: url(../../img/LINE.png);
+  left: 30%; }
+
+.creativity:before {
+  background-image: url(../../img/COMPUTER.png);
+  left: 62%; }
+
+.seo:before {
+  background-image: url(../../img/BOOK.png);
+  left: -1%; }
+
+.css:before {
+  background-image: url(../../img/HOME.png);
+  left: 30%; }
+
+.digital:before {
+  background-image: url(../../img/digital.png);
+  left: 62%; }
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .alarm:before {
+    background-image: url(../../img/ALARM@2x.png); }
+  .web:before {
+    background-image: url(../../img/LINE@2x.png); }
+  .creativity:before {
+    background-image: url(../../img/COMPUTER@2x.png); }
+  .seo:before {
+    background-image: url(../../img/BOOK@2x.png); }
+  .css:before {
+    background-image: url(../../img/HOME@2x.png); }
+  .digital:before {
+    background-image: url(../../img/digital@2x.png); } }
 
 /*Секция команда*/
 .team-title {
@@ -283,7 +287,7 @@ html {
       width: 380px;
       height: 470px;
       background-color: #95e1d3;
-      background-repeat: #95e1d3;
+      background-repeat: no-repeat;
       margin-bottom: 30px; }
       .team .team__items .blue .gradient {
         display: flex;
