@@ -28,7 +28,7 @@ html {
 .header {
   min-height: 1000px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1e960095), color-stop(#fff20095), to(#ff000095)), url(../img/banner.jpg);
-  background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../img/banner.jpg);
+  background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../../img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -233,7 +233,7 @@ html {
 .alarm:before {
   content:'';
   display: block;
-  background-image: url(../img/ALARM.png);
+  background-image: url(../../img/ALARM.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -242,7 +242,7 @@ html {
 .web:before {
   content:'';
   display: block;
-  background-image: url(../img/LINE.png);
+  background-image: url(../../img/LINE.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -251,7 +251,7 @@ html {
 .creativity:before {
   content:'';
   display: block;
-  background-image: url(../img/COMPUTER.png);
+  background-image: url(../../img/COMPUTER.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -260,7 +260,7 @@ html {
 .seo:before {
   content:'';
   display: block;
-  background-image: url(../img/BOOK.png);
+  background-image: url(../../img/BOOK.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -269,7 +269,7 @@ html {
 .css:before {
   content:'';
   display: block;
-  background-image: url(../img/HOME.png);
+  background-image: url(../../img/HOME.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -278,7 +278,7 @@ html {
 .digital:before {
   content:'';
   display: block;
-  background-image: url(../img/digital.png);
+  background-image: url(../../img/digital.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -499,11 +499,11 @@ html {
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-.alarm:before {background-image: url(../img/ALARM@2x.png);}
-.web:before {background-image: url(../img/LINE@2x.png); background-position: 50% 12%;}
-.creativity:before {background-image: url(../img/COMPUTER@2x.png); background-position: 50% 12%;}
-.seo:before {background-image: url(../img/BOOK@2x.png); background-position: 50% 12%;}
-.css:before {background-image: url(../img/HOME@2x.png); background-position: 50% 12%;}
-.digital:before {background-image: url(../img/digital@2x.png); background-position: 50% 12%;}
-.header:before {background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../img/banner@2x.jpg);}
+.alarm:before {background-image: url(../../img/ALARM@2x.png);}
+.web:before {background-image: url(../../img/LINE@2x.png); background-position: 50% 12%;}
+.creativity:before {background-image: url(../../img/COMPUTER@2x.png); background-position: 50% 12%;}
+.seo:before {background-image: url(../../img/BOOK@2x.png); background-position: 50% 12%;}
+.css:before {background-image: url(../../img/HOME@2x.png); background-position: 50% 12%;}
+.digital:before {background-image: url(../../img/digital@2x.png); background-position: 50% 12%;}
+.header:before {background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../../img/banner@2x.jpg);}
 }
