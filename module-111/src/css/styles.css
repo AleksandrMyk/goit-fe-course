@@ -72,7 +72,7 @@ html {
 
 /*Хедер*/
 .header {
-  min-height: 2000px;
+  min-height: 1000px;
   background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../../img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -119,9 +119,9 @@ html {
       width: 20px;
       height: 20px; }
       .navigation .main-menu .main-menu__user-icon--shop-card {
-        background-image: url(/img/shop.png); }
+        background-image: url(../../img/shop.png); }
       .navigation .main-menu .main-menu__user-icon--search {
-        background-image: url(/img/search.png); }
+        background-image: url(../../img/search.png); }
     .navigation .main-menu .main-menu__item:nth-child(7) {
       margin-right: 0px; }
   .navigation .main-menu__link {
