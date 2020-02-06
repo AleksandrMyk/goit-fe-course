@@ -233,7 +233,7 @@ html {
 .alarm:before {
   content:'';
   display: block;
-  background-image: url(../img/ALARM.png);
+  background-image: url(../../img/ALARM.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -242,7 +242,7 @@ html {
 .web:before {
   content:'';
   display: block;
-  background-image: url(../img/LINE.png);
+  background-image: url(../../img/LINE.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -251,7 +251,7 @@ html {
 .creativity:before {
   content:'';
   display: block;
-  background-image: url(../img/COMPUTER.png);
+  background-image: url(../../img/COMPUTER.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -260,7 +260,7 @@ html {
 .seo:before {
   content:'';
   display: block;
-  background-image: url(../img/BOOK.png);
+  background-image: url(../../img/BOOK.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -269,7 +269,7 @@ html {
 .css:before {
   content:'';
   display: block;
-  background-image: url(../img/HOME.png);
+  background-image: url(../../img/HOME.png);
   position: absolute;
   width: 32px;
   height: 32px;
@@ -278,7 +278,7 @@ html {
 .digital:before {
   content:'';
   display: block;
-  background-image: url(../img/digital.png);
+  background-image: url(../../img/digital.png);
   position: absolute;
   width: 32px;
   height: 32px;
