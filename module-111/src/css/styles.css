@@ -73,7 +73,7 @@ html {
 /*Хедер*/
 .header {
   min-height: 1000px;
-  background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(/img/banner.jpg);
+  background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../../img/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -81,7 +81,7 @@ html {
   margin-bottom: 50px; }
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .header .header:before {
-      background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../img/banner@2x.jpg); } }
+      background-image: linear-gradient(to bottom, #1e960095, #fff20095, #ff000095), url(../../img/banner@2x.jpg); } }
 
 .navigation__logo {
   float: left;
@@ -217,43 +217,39 @@ html {
     display: flex;
     flex-direction: column; }
 
-.alarm:before {
-  background-image: url(/img/ALARM.png);
-  left: -1%; }
+    .alarm:before {
+      background-image: url(../../img/ALARM.png);
+      left: -1%;
+    }
+    .web:before {
+      background-image: url(../../img/LINE.png);
+      left: 30%;
+    }
+    .creativity:before {
+      background-image: url(../../img/COMPUTER.png);
+      left: 62%;
+    }
+    .seo:before {
+      background-image: url(../../img/BOOK.png);
+      left: -1%;
+    }
+    .css:before {
+      background-image: url(../../img/HOME.png);
+      left: 30%;
+    }
+    .digital:before {
+      background-image: url(../../img/digital.png);
+      left: 62%;
+    }
 
-.web:before {
-  background-image: url(/img/LINE.png);
-  left: 30%; }
-
-.creativity:before {
-  background-image: url(/img/COMPUTER.png);
-  left: 62%; }
-
-.seo:before {
-  background-image: url(/img/BOOK.png);
-  left: -1%; }
-
-.css:before {
-  background-image: url(/img/HOME.png);
-  left: 30%; }
-
-.digital:before {
-  background-image: url(/img/digital.png);
-  left: 62%; }
-
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .alarm:before {
-    background-image: url(/img/ALARM@2x.png); }
-  .web:before {
-    background-image: url(/img/LINE@2x.png); }
-  .creativity:before {
-    background-image: url(/img/COMPUTER@2x.png); }
-  .seo:before {
-    background-image: url(/img/BOOK@2x.png); }
-  .css:before {
-    background-image: url(/img/HOME@2x.png); }
-  .digital:before {
-    background-image: url(/img/digital@2x.png); } }
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .alarm:before {background-image: url(../../img/ALARM@2x.png)}
+      .web:before {background-image: url(../../img/LINE@2x.png);}
+      .creativity:before {background-image: url(../../img/COMPUTER@2x.png);}
+      .seo:before {background-image: url(../../img/BOOK@2x.png);}
+      .css:before {background-image: url(../../img/HOME@2x.png);}
+      .digital:before {background-image: url(../../img/digital@2x.png);}
+      }
 
 /*Секция команда*/
 .team-title {

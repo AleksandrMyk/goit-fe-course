@@ -3,34 +3,34 @@
 		@extend %icon-services;
 	}
 	.alarm:before {
-		background-image: url(../../../../../img/ALARM.png);
+		background-image: url(../../img/ALARM.png);
 		left: -1%;
 	}
 	.web:before {
-		background-image: url(../../../../../img/LINE.png);
+		background-image: url(../../img/LINE.png);
 		left: 30%;
 	}
 	.creativity:before {
-		background-image: url(../../../../../img/COMPUTER.png);
+		background-image: url(../../img/COMPUTER.png);
 		left: 62%;
 	}
 	.seo:before {
-		background-image: url(../../../../../img/BOOK.png);
+		background-image: url(../../img/BOOK.png);
 		left: -1%;
 	}
 	.css:before {
-		background-image: url(../../../../../img/HOME.png);
+		background-image: url(../../img/HOME.png);
 		left: 30%;
 	}
 	.digital:before {
-		background-image: url(../../../../../img/digital.png);
+		background-image: url(../../img/digital.png);
 		left: 62%;
 	}
 	@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-		.alarm:before {background-image: url(../../../../../img/ALARM@2x.png)}
-		.web:before {background-image: url(../../../../../img/LINE@2x.png);}
-		.creativity:before {background-image: url(../../../../../img/COMPUTER@2x.png);}
-		.seo:before {background-image: url(../../../../../img/BOOK@2x.png);}
-		.css:before {background-image: url(../../../../../img/HOME@2x.png);}
-		.digital:before {background-image: url(../../../../../img/digital@2x.png);}
+		.alarm:before {background-image: url(../../img/ALARM@2x.png)}
+		.web:before {background-image: url(../../img/LINE@2x.png);}
+		.creativity:before {background-image: url(../../img/COMPUTER@2x.png);}
+		.seo:before {background-image: url(../../img/BOOK@2x.png);}
+		.css:before {background-image: url(../../img/HOME@2x.png);}
+		.digital:before {background-image: url(../../img/digital@2x.png);}
 		}
