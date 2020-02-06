@@ -7,7 +7,7 @@
 		font-size: 30px;
 		text-transform: uppercase;
 	}
-	.team-itle__title-text {
+	.team-title__title-text {
 		@extend %subtitle;
 	}
 	&::after {
